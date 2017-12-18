@@ -8,7 +8,7 @@ To download a pre-compiled binary of the latest version, click [here][3].
 
 Changelog (Major releases):
 ##### - V 1.8 (December 17, 2017)
-  - Lowered exit tolerance time to close EZBlocker faster
+  - Lowered exit tolerance to close EZBlocker faster
   - Disabled "Spotify not found" notification
   - Disabled EZBlocker updates leading to Xeroday master
   - Disabled exit notification MessageBox
