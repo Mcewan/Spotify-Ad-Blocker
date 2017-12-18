@@ -7,7 +7,7 @@ This is my own personal spin on EZBlocker by Xeroday.
 To download a pre-compiled binary of the latest version, click [here][3].
 
 Changelog (Major releases):
- - V 1.8 (December 17, 2017)
+##### - V 1.8 (December 17, 2017)
   - Lowered exit tolerance time to close EZBlocker faster
   - Disabled "Spotify not found" notification
   - Disabled EZBlocker updates leading to Xeroday master
@@ -16,7 +16,7 @@ Changelog (Major releases):
   - Updated latest Executable
 
 
- - V 1.7 (October 21, 2016)
+##### - V 1.7 (October 21, 2016)
   - Diabled 'Private Session' Warning Message
   - Disabled 'EZBlocker is Hidden' Notification
   - Added Album and Song labels
@@ -25,7 +25,7 @@ Changelog (Major releases):
   - Fixed Icon issue after opening from system tray
   - Fixed Label issue where artist/album/song label wouldn't change
 
-
+---
 
 # EZBlocker
 
