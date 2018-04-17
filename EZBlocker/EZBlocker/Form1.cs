@@ -566,6 +566,7 @@ namespace EZBlocker
                 if (File.Exists(spotifyPath) && Process.GetProcessesByName("spotify").Length < 1)
                 {
                     Process.Start(spotifyPath);
+                    WindowState = FormWindowState.Minimized;
                 }
                 Process.GetCurrentProcess().PriorityClass = ProcessPriorityClass.High; // Windows throttles down when minimized to task tray, so make sure EZBlocker runs smoothly
 
