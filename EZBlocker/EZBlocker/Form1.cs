@@ -48,7 +48,8 @@ namespace EZBlocker
         private const int MEDIA_NEXTTRACK = 0xB0000;
         
         private string EZBlockerUA = "EZBlocker " + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " " + System.Environment.OSVersion;
-        private const string website = @"https://www.ericzhang.me/projects/spotify-ad-blocker-ezblocker/";
+        private const string website = @"https://github.com/Novaki92/Spotify-Ad-Blocker";
+        private const string latestEXE = @"https://github.com/Novaki92/Spotify-Ad-Blocker/blob/master/Latest%20Executable/EZBlocker.exe?raw=true";
         private const string issueLink = @"https://github.com/Novaki92/Spotify-Ad-Blocker/issues/new";
 
         // Google Analytics stuff
@@ -321,22 +322,22 @@ namespace EZBlocker
                     MessageBox.Show("There was an error updating EZBlocker. Please run as Administrator to update.");
                 }
             }
-            //try
-            //{
-                //int latest = Convert.ToInt32(GetPage("https://www.ericzhang.me/dl/?file=EZBlocker-version.txt", EZBlockerUA));
-                //int current = Convert.ToInt32(Assembly.GetExecutingAssembly().GetName().Version.ToString().Replace(".", ""));
-                //if (latest <= current)
-                    //return;
-                //if (MessageBox.Show("There is a newer version of EZBlocker available. Would you like to upgrade?", "EZBlocker", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                //{
-                    //Process.Start(website);
-                    //Application.Exit();
-                //}
-            //}
-            //catch
-            //{
-                //MessageBox.Show("Error checking for update.", "EZBlocker");
-            //}
+            try
+            {
+            int latest = Convert.ToInt32(GetPage("https://raw.githubusercontent.com/Novaki92/Spotify-Ad-Blocker/master/version", EZBlockerUA));
+            int current = Convert.ToInt32(Assembly.GetExecutingAssembly().GetName().Version.ToString().Replace(".", ""));
+            if (latest <= current)
+            return;
+            if (MessageBox.Show("There is a newer version of EZBlocker available. Would you like to upgrade?", "EZBlocker", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+            Process.Start(latestEXE);
+            Application.Exit();
+            }
+            }
+            catch
+            {
+            MessageBox.Show("Error checking for update.", "EZBlocker");
+            }
         }
 
         /**
