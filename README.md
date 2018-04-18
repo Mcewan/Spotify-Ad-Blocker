@@ -7,7 +7,13 @@ This is my own personal spin on EZBlocker by Xeroday.
 To download a pre-compiled binary of the latest version, click [here][3].
 
 Changelog (Major releases):
-##### - V 1.8.1 (December 27, 2017)
+##### - V 1.9 (April 17, 2018)
+  - Starts minimized to system tray
+  - Checks for updates
+  - Fixed bug that would throw error on startup 
+
+
+##### - V 1.8 (December 27, 2017)
   - Lowered exit tolerance to close EZBlocker faster
   - Disabled "Spotify not found" notification
   - Disabled EZBlocker update checks leading to Xeroday master
