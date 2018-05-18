@@ -94,3 +94,4 @@ Changelog (Major releases only):
   [1]: http://www.ericzhang.me/dl/?file=EZBlocker.php
   [2]: http://www.ericzhang.me/projects/spotify-ad-blocker-ezblocker/
   [3]: https://github.com/Novaki92/Spotify-Ad-Blocker/raw/master/Latest%20Executable/EZBlocker.exe
+  [4]: https://github.com/Novaki92/Spotify-Ad-Blocker/blob/installer_test/Installer/EZBlocker_Setup.msi?raw=true
