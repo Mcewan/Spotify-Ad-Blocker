@@ -6,7 +6,7 @@ This is my own personal spin on EZBlocker by Xeroday.
 
 To download a pre-compiled binary of the latest version, click [here][3].
 
-To download an installer for the latest version, click [here][4].
+To download an installer for the latest version, click [here][4]. (recommended)
 
 Changelog (Major releases):
 ##### - V 2.0 (May 18, 2018)
