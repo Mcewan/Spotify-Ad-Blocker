@@ -9,6 +9,11 @@ To download a pre-compiled binary of the latest version, click [here][3].
 To download an installer for the latest version, click [here][4].
 
 Changelog (Major releases):
+##### - V 2.0 (May 18, 2018)
+  - Starts minimized to system tray
+  - Checks for updates
+  - Fixed bug that would throw error on startup 
+
 ##### - V 1.9 (April 17, 2018)
   - Starts minimized to system tray
   - Checks for updates
