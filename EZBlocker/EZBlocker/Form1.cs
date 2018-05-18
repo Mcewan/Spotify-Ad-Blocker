@@ -129,7 +129,7 @@ namespace EZBlocker
                     AlbumLabel.Text = "Spotify is closed";
                     ArtistLabel.Text = "Exiting EZBlocker";
                     //Notify("Error connecting to Spotify. Retrying...");
-                    File.AppendAllText(logPath, "Not running.\r\n");
+                    //File.AppendAllText(logPath, "Not running.\r\n");
                     MainTimer.Interval = 10;
                     /*
                     MainTimer.Enabled = false;
