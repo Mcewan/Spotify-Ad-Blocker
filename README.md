@@ -6,7 +6,13 @@ This is my own personal spin on EZBlocker by Xeroday.
 
 To download a pre-compiled binary of the latest version, click [here][3].
 
+To download an installer for the latest version, click [here][4].
+
 Changelog (Major releases):
+##### - V 2.0 (May 18, 2018)
+  - Added Installer
+  - Better logging
+
 ##### - V 1.9 (April 17, 2018)
   - Starts minimized to system tray
   - Checks for updates
@@ -92,3 +98,4 @@ Changelog (Major releases only):
   [1]: http://www.ericzhang.me/dl/?file=EZBlocker.php
   [2]: http://www.ericzhang.me/projects/spotify-ad-blocker-ezblocker/
   [3]: https://github.com/Novaki92/Spotify-Ad-Blocker/raw/master/Latest%20Executable/EZBlocker.exe
+  [4]: https://github.com/Novaki92/Spotify-Ad-Blocker/blob/installer_test/Installer/EZBlocker_Setup.msi?raw=true
