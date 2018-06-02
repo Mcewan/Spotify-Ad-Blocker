@@ -42,7 +42,6 @@
             this.StartupCheckbox = new System.Windows.Forms.CheckBox();
             this.AlbumLabel = new System.Windows.Forms.Label();
             this.SongLabel = new System.Windows.Forms.Label();
-            this.chkOnTop = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // MainTimer
@@ -54,10 +53,11 @@
             // 
             this.MuteButton.Location = new System.Drawing.Point(12, 162);
             this.MuteButton.Name = "MuteButton";
-            this.MuteButton.Size = new System.Drawing.Size(212, 27);
+            this.MuteButton.Size = new System.Drawing.Size(59, 27);
             this.MuteButton.TabIndex = 3;
             this.MuteButton.Text = "Mute/UnMute Spotify";
             this.MuteButton.UseVisualStyleBackColor = true;
+            this.MuteButton.Visible = false;
             this.MuteButton.Click += new System.EventHandler(this.MuteButton_Click);
             // 
             // NotifyIcon
@@ -70,7 +70,7 @@
             // WebsiteLink
             // 
             this.WebsiteLink.AutoSize = true;
-            this.WebsiteLink.Location = new System.Drawing.Point(12, 197);
+            this.WebsiteLink.Location = new System.Drawing.Point(153, 143);
             this.WebsiteLink.Name = "WebsiteLink";
             this.WebsiteLink.Size = new System.Drawing.Size(80, 13);
             this.WebsiteLink.TabIndex = 5;
@@ -91,7 +91,6 @@
             this.SpotifyMuteCheckbox.Name = "SpotifyMuteCheckbox";
             this.SpotifyMuteCheckbox.Size = new System.Drawing.Size(109, 17);
             this.SpotifyMuteCheckbox.TabIndex = 6;
-            this.SpotifyMuteCheckbox.Tag = "";
             this.SpotifyMuteCheckbox.Text = "Mute Only Spotify";
             this.SpotifyMuteCheckbox.UseVisualStyleBackColor = true;
             this.SpotifyMuteCheckbox.CheckedChanged += new System.EventHandler(this.SpotifyMuteCheckBox_CheckedChanged);
@@ -110,11 +109,11 @@
             // 
             this.ArtistLabel.AutoSize = true;
             this.ArtistLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ArtistLabel.Location = new System.Drawing.Point(12, 117);
+            this.ArtistLabel.Location = new System.Drawing.Point(9, 143);
             this.ArtistLabel.Name = "ArtistLabel";
-            this.ArtistLabel.Size = new System.Drawing.Size(42, 13);
+            this.ArtistLabel.Size = new System.Drawing.Size(54, 13);
             this.ArtistLabel.TabIndex = 9;
-            this.ArtistLabel.Text = "<Artist>";
+            this.ArtistLabel.Text = "Loading...";
             // 
             // BlockBannersCheckbox
             // 
@@ -142,39 +141,25 @@
             // 
             this.AlbumLabel.AutoSize = true;
             this.AlbumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AlbumLabel.Location = new System.Drawing.Point(12, 131);
+            this.AlbumLabel.Location = new System.Drawing.Point(9, 130);
             this.AlbumLabel.Name = "AlbumLabel";
-            this.AlbumLabel.Size = new System.Drawing.Size(48, 13);
+            this.AlbumLabel.Size = new System.Drawing.Size(0, 13);
             this.AlbumLabel.TabIndex = 12;
-            this.AlbumLabel.Text = "<Album>";
             // 
             // SongLabel
             // 
             this.SongLabel.AutoSize = true;
             this.SongLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SongLabel.Location = new System.Drawing.Point(12, 145);
+            this.SongLabel.Location = new System.Drawing.Point(9, 117);
             this.SongLabel.Name = "SongLabel";
-            this.SongLabel.Size = new System.Drawing.Size(44, 13);
+            this.SongLabel.Size = new System.Drawing.Size(0, 13);
             this.SongLabel.TabIndex = 13;
-            this.SongLabel.Text = "<Song>";
-            // 
-            // chkOnTop
-            // 
-            this.chkOnTop.AutoSize = true;
-            this.chkOnTop.Location = new System.Drawing.Point(166, 48);
-            this.chkOnTop.Name = "chkOnTop";
-            this.chkOnTop.Size = new System.Drawing.Size(58, 17);
-            this.chkOnTop.TabIndex = 14;
-            this.chkOnTop.Text = "On top";
-            this.chkOnTop.UseVisualStyleBackColor = true;
-            this.chkOnTop.CheckedChanged += new System.EventHandler(this.chkOnTop_CheckedChanged);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 219);
-            this.Controls.Add(this.chkOnTop);
+            this.ClientSize = new System.Drawing.Size(245, 160);
             this.Controls.Add(this.SongLabel);
             this.Controls.Add(this.AlbumLabel);
             this.Controls.Add(this.StartupCheckbox);
@@ -185,6 +170,7 @@
             this.Controls.Add(this.MuteButton);
             this.Controls.Add(this.WebsiteLink);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Main";
@@ -211,7 +197,6 @@
         private System.Windows.Forms.CheckBox StartupCheckbox;
         private System.Windows.Forms.Label AlbumLabel;
         private System.Windows.Forms.Label SongLabel;
-        private System.Windows.Forms.CheckBox chkOnTop;
     }
 }
 

@@ -69,8 +69,6 @@ namespace EZBlocker
         public Main()
         {
             InitializeComponent();
-            // TODO: Restore user pref
-            TopMost = chkOnTop.Checked;
         }
 
         /**
@@ -152,15 +150,15 @@ namespace EZBlocker
                     if (MainTimer.Interval > 1000) MainTimer.Interval = 600;
                     if (SongLabel.Text != whr.songName)
                     {
-                        SongLabel.Text = "Song:  " + whr.songName; //ShortenName(whr.songName, 34);
+                        SongLabel.Text = "Song:  " + ShortenName(whr.songName, 34);
                     }
                     if (AlbumLabel.Text != whr.albumName)
                     {
-                        AlbumLabel.Text = "Album: " + whr.albumName; //ShortenName(whr.albumName, 36);
+                        AlbumLabel.Text = "Album: " + ShortenName(whr.albumName, 36);
                     }
                     if (ArtistLabel.Text != whr.artistName)
                     {
-                        ArtistLabel.Text = "Artist:   " + whr.artistName; //ShortenName(whr.artistName, 19);
+                        ArtistLabel.Text = "Artist:   " + ShortenName(whr.artistName, 19);
                         lastArtistName = whr.artistName;
                     }
                 }
@@ -665,11 +663,6 @@ namespace EZBlocker
             MainTimer.Enabled = true;
 
             LogAction("/launch");
-        }
-
-        private void chkOnTop_CheckedChanged(object sender, EventArgs e)
-        {
-            TopMost = chkOnTop.Checked;
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
